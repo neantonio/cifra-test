@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.groupstp.cifra.web.document.Issuedescription"
+        messagesPack="com.groupstp.cifra.web.document">
+    <dsContext>
+        <datasource id="documentDs"
+                    class="com.groupstp.cifra.entity.Document"/>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <vbox spacing="true">
+            <label id="ISSUE_LABEL"
+                   align="TOP_CENTER"
+                   height="40px"
+                   value="msg://ISSUE_DESCRIPTION"/>
+            <textArea id="ISSUE_COMMENT"
+                      height="192px"
+                      width="534px"/>
+            <hbox align="TOP_RIGHT"
+                  spacing="true">
+                <button id="ID_OK"
+                        caption="OK"/>
+                <button id="ID_CANCEL"
+                        caption="msg://Cancel"/>
+            </hbox>
+        </vbox>
+    </layout>
+</window>
